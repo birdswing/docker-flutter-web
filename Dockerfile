@@ -1,6 +1,6 @@
 FROM debian:latest
 
-ARG FLUTTER_VERSION=3.19.2
+ARG FLUTTER_VERSION=3.19.3
 
 ENV FLUTTER_SDK=/usr/local/flutter
 ENV PATH="$FLUTTER_SDK/bin:$FLUTTER_SDK/bin/cache/dart-sdk/bin:${PATH}"
