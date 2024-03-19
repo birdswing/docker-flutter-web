@@ -16,7 +16,11 @@ COPY . .
 
 # Uncomment this line to auto-generate files for localization, JSON serialization, etc:
 # RUN dart run build_runner build --delete-conflicting-outputs
-RUN flutter build web --verbose --profile --dart-define=Dart2jsOptimization=O0
+
+# Debug Build: 
+#RUN flutter build web --verbose --profile --dart2js-optimization=O0 --source-maps
+# Release build: 
+RUN flutter build web --verbose
 
 FROM nginx:alpine
 
