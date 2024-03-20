@@ -11,6 +11,7 @@ FROM birdswing/flutter-web:latest AS build
 COPY pubspec.yaml .
 COPY pubspec.lock .
 RUN flutter pub get
+RUN flutter clean 
 
 COPY . .
 
